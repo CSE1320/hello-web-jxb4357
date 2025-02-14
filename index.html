@@ -5,19 +5,36 @@
             @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
             /* UTILITY */
-        .b {
-            border: 1px solid blue;
+        .cr {
+            display: flex;
+            justify-content: center;
         }
 
-        .title {
-            font-family: Nunito;
-            font-size: 16px;
+        .listpolaroidcard{
+            display: grid;
+            grid-template-columns: repeat(3, min-content);
+            gap: 20px;
+            list-style: none;
+            margin-top: 33px;
         }
         
         .title h1{
-            font-size: 16px;
+            color: #203B5F;
             text-align: center;
-            color: #203B5F
+            font-family: Nunito;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .title {
+            position: relative;
+            margin-top: 11px;
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow: visible;
         }
 
         .polaroidcard {
@@ -31,16 +48,70 @@
             height: 100%;
             width: 100%;
         }
+
+        img {
+            width: 94px;
+            height: 103px;
+            position: relative;
+            margin-top: 7px;
+            margin-left: 3px;
+        }
+
         </style>
     </head>
-    <body>
-        <div class="polaroidcard b">
-            <div class="polaroid b">
-                <img src="assets/img_deathcap.png" width="94px" height="103px" align-items="center">
-            </div>
-            <div class="title">
-                <h1>Death Cap</h1>
-            </div>
-        </div>
+    <body class="cr">
+        <ul class="listpolaroidcard">
+            <li>
+                <div class="polaroidcard">
+                    <div class="polaroid">
+                        <img src="assets/img_deathcap.png" alt="Death Cap Mushroom" width="94px" height="103px" align-items="center">
+                    </div>
+                    <div class="title">
+                        <h1>Death Cap</h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="polaroidcard">
+                    <div class="polaroid">
+                        <img src="assets/img_paddystraw.png" alt="Paddy Straw Mushroom" width="94px" height="103px" align-items="center">
+                    </div>
+                    <div class="title">
+                        <h1>Paddy Straw</h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="polaroidcard">
+                    <div class="polaroid">
+                        <img src="assets/img_destroyingangel.png" alt="Destroying Angel Mushroom" width="94px" height="103px" align-items="center">
+                    </div>
+                    <div class="title">
+                        <h1>Destroying Angel</h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="polaroidcard">
+                    <div class="polaroid">
+                        <img src="assets/img_falsedeathcap.png" alt="False Death Cap Mushroom" width="94px" height="103px" align-items="center">
+                    </div>
+                    <div class="title">
+                        <h1>False Death Cap</h1>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="polaroidcard">
+                    <div class="polaroid">
+                        <img src="assets/img_puffball.png" alt="Puffball Mushroom" width="94px" height="103px" align-items="center">
+                    </div>
+                    <div class="title">
+                        <h1>Puffball</h1>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
     </body>
 </html>
